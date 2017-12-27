@@ -1,0 +1,33 @@
+{
+    "name": "shravanjbp/laravel-ctct",
+    "description": "Constant Contact for Laravel 5.5",
+    "keywords": ["constantcontact", "ctct", "email marketing", "constant contact", "laravel"],
+    "type": "library",
+    "require": {
+        "php": ">=7.0.0",
+        "constantcontact/constantcontact": "2.1.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shravan Sharma",
+            "email": "shravanjbp@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "ShravanJbp\\LaravelCtct\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ShravanJbp\\LaravelCtct\\LaravelCtctServiceProvider"
+            ],
+            "aliases": {
+                "LaravelCtct": "ShravanJbp\\LaravelCtct\\LaravelCtctFacade"
+            }
+        }
+    }
+}
